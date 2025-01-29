@@ -35,7 +35,7 @@ try {
 
         $result = $mysqli->query($sql_sentence);
         // write info message with "Record inserted successfully"
-        //TODO
+        //TODO ✅
         $log->info("Record inserted successfully.");
         ++$steps;
     } catch (mysqli_sql_exception $e) {
@@ -44,6 +44,7 @@ try {
     }
 } catch (mysqli_sql_exception $e) {
     //  write error message with "Error connection db: + details parameters config"
-    //TODO
+    //TODO ✅
+    $log->error("Error connection db: (details parameters config: " . json_encode($db) . ").");
 }
 echo "steps executed correctly: " . $steps;
