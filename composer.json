@@ -1,0 +1,21 @@
+{
+    "name": "m07uf2/akishaangeles",
+    "description": "monolog_exercise",
+    "type": "project",
+    "license": "free",
+    "autoload": {
+        "psr-4": {
+            "M07uf2\\Akishaangeles\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "akishajae",
+            "email": "akishajae.angeles@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog": "^3.0@dev"
+    }
+}

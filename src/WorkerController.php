@@ -1,7 +1,7 @@
 <?php
 $steps=0;
 // load dependencies
-require './vendor/autoload.php'; 
+require __DIR__ . './vendor/autoload.php'; 
 ++$steps;
 use Monolog\Level;
 use Monolog\Logger;
