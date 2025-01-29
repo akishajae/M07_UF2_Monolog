@@ -28,11 +28,12 @@ try {
     $log->info("Connection successfully done.");
     ++$steps;
 
+    // Create operation
     try {
-        // Create operation
         $sql_sentence = "INSERT INTO worker(dni,name,surname,salary,phone) 
             VALUES('71111111D','Juan','González',20000,'93500202')";
 
+    // try {
         $result = $mysqli->query($sql_sentence);
         // write info message with "Record inserted successfully"
         //TODO ✅
@@ -40,7 +41,8 @@ try {
         ++$steps;
     } catch (mysqli_sql_exception $e) {
         //  write error message with "Error inserting a record"
-        //TODO
+        //TODO ✅
+        $log->error("Error inserting a record.");
     }
 } catch (mysqli_sql_exception $e) {
     //  write error message with "Error connection db: + details parameters config"
